@@ -1,0 +1,84 @@
+
+
+<!-- <div class="page-header"></div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading text-center">Our Awesome application</div>
+        <div class="panel-body" align="center">
+          <img src="{{currentUser.photoUrl }}" height="50" width="50">
+          {{ currentUser.Name }}<br>
+          Current User email: {{ currentUser.email }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav navbar-right">
+      <li role="menuitem"><a class="dropdown-item" (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
+
+
+  <div class="container rounded bg-white mt-5">
+      <div class="row">
+          <div class="col-md-4 border-right">
+              <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                
+                <img class="rounded-circle mt-5" src="{{currentUser.photoUrl }}" width="90">
+                <span class="font-weight-bold">{{ currentUser.Name }}</span>
+                <span class="text-black-50">{{ currentUser.email }}</span>
+                <span>United States</span>
+              </div>
+          </div>
+          <div class="col-md-8">
+              <div class="p-3 py-5">
+                 <form>
+                  <div class="row mt-2">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="first name" ></div>
+                      <div class="col-md-6"><input type="text" class="form-control"  placeholder="Last Name"></div>
+                  </div>
+
+                  <div class="row mt-3">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Email" ></div>
+                      <div class="col-md-6"><input type="text" class="form-control" value="+19685969668" placeholder="Phone number"></div>
+                  </div>
+
+                  <div class="row mt-3">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="address" value="D-113, right avenue block, CA,USA"></div>
+                      <div class="col-md-6"><select class="form-control" placeholder="Country">
+                          <option>Select country</option>
+                          <option>United States</option>
+  
+                          </select>
+                      </div>
+                  </div>
+
+                  <div class="row mt-3">
+                      <div class="col-md-6"><input type="text" class="form-control" placeholder="Bank Name" value="Bank of America"></div>
+                      <div class="col-md-6"><input type="text" class="form-control" value="043958409584095" placeholder="Account Number"></div>
+                  </div>
+                  <input hidden type="file" name="image" value="currentUser.photoUrl">
+                 
+                  <div class="mt-5 text-right"><button class="btn btn-primary " type="button">Save Profile</button></div>
+                </form>
+                </div>
+          </div>
+
+
+      </div>
+  </div>
+
+  </body>
